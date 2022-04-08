@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px 0;
+}
+/* Click Visit */
+
+.visitbutton {
+  width: 100px;
+  height: 30px;
+  background-color: darkviolet;
+  color: blanchedalmond;
+  margin: 30px;
+}
+
+.refreshbutton {
+  width: 100px;
+  height: 30px;
+  background-color: midnightblue;
+  color: blanchedalmond;
+  margin: 30px;
+}

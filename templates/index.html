@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h1>Counter</h1>
+            <h3>{{ "{} visits".format(session.get('visits')) }}</h3>
+
+            <button class="visitbutton">Visit Me</button>
+            <a href="/clear"><button class="refreshbutton">Refresh Me</button></a>
+
+
+    </div>
+</body>
+</html>
