@@ -15,31 +15,10 @@ def home():
     return render_template("index.html")
 
 
-@app.route('/users', methods=['POST'])
-def create_user():
-    print("Got Post Info")
-    print(request.form)
-
-    # storing data from request.form dictionary in the session dictionary
-    session['username'] = request.form['name']
-    session['useremail'] = request.form['email']
-    session['hidden'] = request.form['hidden_field']
-    return redirect("/count")
-
-# Count session
-
-
-@app.route("/count")
-def show_user():
-    print("Showing the User Info From the Form")
-    print(request.form)
-    return render_template("count.html")
-
 # clearing out session
 
-
-@app.route("/clear")
-def clear_session():
+@app.route("/destroy")
+def destroy_session():
     session.clear()
     return redirect("/")
 
