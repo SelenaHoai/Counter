@@ -9,7 +9,7 @@ app.secret_key = 'april python class is the coolest'
 @app.route('/')
 def home():
     if 'visits' in session:
-        session['visits'] = session.get('visits') + 1
+        session['visits'] = session.get('visits') + 2
     else:
         session['visits'] = 1
     return render_template("index.html")
